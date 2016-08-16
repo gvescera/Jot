@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="16A238m" minimumToolsVersion="Automatic">
+    <entity name="Categories" representedClassName=".Categories" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tasks" representedClassName="Tasks" syncable="YES">
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reminderDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-9" positionY="81" width="128" height="60"/>
+        <element name="Tasks" positionX="-11" positionY="45" width="128" height="118"/>
+    </elements>
+</model>
