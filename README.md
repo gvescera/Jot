@@ -4,5 +4,8 @@ Jot is a reminder-style application that is simple and straight to the point. Th
 
 Upcoming changes/additions:
 - Notifications
-- Subtasks
 - Layout and UI fixes
+
+Changelog:
+(8/16/16) - small GUI fixes
+          - primative notification support
