@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37017D4F1D5AECFC0018A7BC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37017D4E1D5AECFC0018A7BC /* Cell.swift */; };
 		371C14EC1D5CD02F00031BFB /* Categories+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C14EB1D5CD02F00031BFB /* Categories+CoreDataProperties.swift */; };
 		371C14EE1D5CD09E00031BFB /* Tasks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C14ED1D5CD09E00031BFB /* Tasks+CoreDataProperties.swift */; };
 		372D5A521D5B88C9002AF689 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D5A501D5B88C9002AF689 /* Categories.swift */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37017D4E1D5AECFC0018A7BC /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		371C14EB1D5CD02F00031BFB /* Categories+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Categories+CoreDataProperties.swift"; path = "../Categories+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		371C14ED1D5CD09E00031BFB /* Tasks+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Tasks+CoreDataProperties.swift"; path = "../Tasks+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		372D5A501D5B88C9002AF689 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = ../Categories.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				3761C2771D491BEA001C6203 /* vcTaskDetails.swift */,
 				373438041D550373003AA407 /* TaskCell.swift */,
 				376356E21D5E493800CBC682 /* vcNewTask.swift */,
-				37017D4E1D5AECFC0018A7BC /* Cell.swift */,
 				3761C2731D491BAA001C6203 /* vcCategories.swift */,
 				3761C2751D491BC8001C6203 /* vcTasks.swift */,
 				376758381D4A54110058E9B2 /* CatCell.swift */,
@@ -196,7 +193,6 @@
 				3761C2741D491BAA001C6203 /* vcCategories.swift in Sources */,
 				371C14EC1D5CD02F00031BFB /* Categories+CoreDataProperties.swift in Sources */,
 				373438051D550373003AA407 /* TaskCell.swift in Sources */,
-				37017D4F1D5AECFC0018A7BC /* Cell.swift in Sources */,
 				376356E31D5E493800CBC682 /* vcNewTask.swift in Sources */,
 				371C14EE1D5CD09E00031BFB /* Tasks+CoreDataProperties.swift in Sources */,
 				3761C2671D490F46001C6203 /* Jot.xcdatamodeld in Sources */,

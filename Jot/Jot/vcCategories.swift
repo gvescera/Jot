@@ -177,7 +177,6 @@ class vcCategories: UIViewController, UITableViewDelegate, UITableViewDataSource
     func configureCell(cell: CatCell, indexPath: NSIndexPath) -> CatCell{
         let cat = fetchedResultsController.objectAtIndexPath(indexPath) as! Categories
         cell.title.text = cat.category
-        cell.progressBar.setProgress(0.25, animated: false)
         return cell
     }
     

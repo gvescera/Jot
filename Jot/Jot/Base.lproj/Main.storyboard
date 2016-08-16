@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A238m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6WR-al-vaK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6WR-al-vaK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -43,33 +43,22 @@
                                                         <rect key="frame" x="8" y="8" width="43" height="43"/>
                                                     </variation>
                                                 </imageView>
-                                                <progressView opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmK-8e-cOi">
-                                                    <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
-                                                    <color key="progressTintColor" red="1" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="trackTintColor" red="1" green="0.83529411760000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="59" y="37" width="300" height="2"/>
-                                                    </variation>
-                                                </progressView>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="hrI-wc-WvS"/>
                                                     <exclude reference="a7m-7w-Ult"/>
-                                                    <exclude reference="bmK-8e-cOi"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="hrI-wc-WvS"/>
                                                     <include reference="a7m-7w-Ult"/>
-                                                    <include reference="bmK-8e-cOi"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="img" destination="a7m-7w-Ult" id="LqQ-ak-bvj"/>
-                                            <outlet property="progressBar" destination="bmK-8e-cOi" id="EKc-cO-eAX"/>
                                             <outlet property="title" destination="hrI-wc-WvS" id="h4V-jB-Adf"/>
                                             <segue destination="z6N-5p-uxN" kind="show" identifier="vcTasks" id="mWu-v4-AbF"/>
                                         </connections>
@@ -173,14 +162,6 @@
                                                         <rect key="frame" x="255" y="37" width="108" height="21"/>
                                                     </variation>
                                                 </label>
-                                                <progressView opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-kV-okm">
-                                                    <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
-                                                    <color key="progressTintColor" red="1" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="trackTintColor" red="1" green="0.83529411760000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="8" y="95" width="355" height="2"/>
-                                                    </variation>
-                                                </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-R6-2T2">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -207,7 +188,6 @@
                                                     <exclude reference="2Pe-cT-3B5"/>
                                                     <exclude reference="bt5-Jm-guZ"/>
                                                     <exclude reference="SOR-7Z-NGV"/>
-                                                    <exclude reference="gH1-kV-okm"/>
                                                     <exclude reference="bsV-R6-2T2"/>
                                                     <exclude reference="jog-hC-Pfg"/>
                                                 </mask>
@@ -219,7 +199,6 @@
                                                     <include reference="2Pe-cT-3B5"/>
                                                     <include reference="bt5-Jm-guZ"/>
                                                     <include reference="SOR-7Z-NGV"/>
-                                                    <include reference="gH1-kV-okm"/>
                                                     <include reference="bsV-R6-2T2"/>
                                                     <include reference="jog-hC-Pfg"/>
                                                 </mask>
@@ -231,7 +210,7 @@
                                             <outlet property="rTime" destination="bsV-R6-2T2" id="8B2-2F-sH0"/>
                                             <outlet property="task" destination="YaH-4n-LQN" id="VXY-fu-4PB"/>
                                             <outlet property="time" destination="jog-hC-Pfg" id="vhp-2d-Akq"/>
-                                            <segue destination="Edh-NM-MED" kind="show" identifier="vcTaskDetails" id="BpJ-rk-KgN"/>
+                                            <segue destination="Edh-NM-MED" kind="show" id="fbe-CN-QId"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -259,6 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="BcR-eO-7tH"/>
                     <connections>
+                        <outlet property="navBar" destination="BcR-eO-7tH" id="wd1-Sf-KUv"/>
                         <outlet property="taskTable" destination="CEl-gp-MLN" id="Vzm-tW-Pj8"/>
                     </connections>
                 </viewController>

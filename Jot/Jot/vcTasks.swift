@@ -13,14 +13,14 @@ class vcTasks: UIViewController, UITableViewDelegate, UITableViewDataSource, NSF
 
     // MARK: - Outlets
     @IBOutlet weak var taskTable: UITableView!
-    
+    @IBOutlet weak var navBar: UINavigationItem!
     
     // MARK: - Properties
     var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
     var fetchedResultsController: NSFetchedResultsController!
     var categoryName: String!
     var catID: NSManagedObjectID!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,7 @@ class vcTasks: UIViewController, UITableViewDelegate, UITableViewDataSource, NSF
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        navBar.title = categoryName
         initializeFetchedResultsController()
     }
     
@@ -214,22 +215,15 @@ class vcTasks: UIViewController, UITableViewDelegate, UITableViewDataSource, NSF
         self.view.addSubview(addButton)
     }
 
-    func addTask(addButton: UIButton) {
+    func addTask() {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("vcNewTask") as! vcNewTask
         vc.categoryName = categoryName
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
-    func saveTask(taskName: String) {
-        let task = NSEntityDescription.insertNewObjectForEntityForName("Tasks", inManagedObjectContext: appDel.dataController.managedObjectContext) as! Tasks
-        task.categoryName = categoryName
-        task.taskName = taskName
-        
-        do {
-            try appDel.dataController.managedObjectContext.save()
-        } catch {
-            fatalError("Failure to save context: \(error)")
-        }
-    }
+    
+    
+    
+    
     
 }

@@ -59,6 +59,19 @@ class vcNewTask: UIViewController, UITextViewDelegate {
             
             do {
                 try self.appDel.dataController.managedObjectContext.save()
+                
+                let date = self.dpReminder.date
+                let components = NSDateComponents().calendar?.components([.Month, .Day, .Year, .Hour, .Minute], fromDate: date)
+                let fixedDate = NSDateComponents().calendar?.dateFromComponents(components!)
+                
+                let notification = UILocalNotification()
+                notification.fireDate = fixedDate
+                notification.alertBody = self.txtTask.text
+                notification.timeZone = NSTimeZone.defaultTimeZone()
+                notification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+                
+                UIApplication.sharedApplication().scheduleLocalNotification(notification)
+                
             } catch {
                 fatalError("Failure to save context: \(error)")
             }
