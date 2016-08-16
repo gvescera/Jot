@@ -7,5 +7,7 @@ Upcoming changes/additions:
 - Layout and UI fixes
 
 Changelog:
-(8/16/16) - small GUI fixes
-          - primative notification support
+
+(8/16/16) 
+- small GUI fixes
+- primative notification support
